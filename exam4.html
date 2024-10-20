@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literature Exam</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Literature Exam</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+    </div>
+    <script>
+        const questions = [
+            { question: "Who wrote 'To Kill a Mockingbird'?", options: ["Harper Lee", "Mark Twain", "J.K. Rowling", "Ernest Hemingway"], correctAnswer: "Harper Lee" },
+            { question: "When was '1984' published?", options: ["1930", "1945", "1949", "1955"], correctAnswer: "1949" }
+        ];
+        loadQuestions(questions);
+    </script>
+</body>
+</html>
