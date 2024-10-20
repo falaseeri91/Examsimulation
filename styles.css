@@ -8,7 +8,7 @@ body {
     background-color: #f4f4f4;
 }
 
-#exam-container {
+#app {
     background: white;
     padding: 20px;
     border-radius: 5px;
@@ -17,7 +17,7 @@ body {
     text-align: center;
 }
 
-#next-btn {
+button {
     margin-top: 20px;
     padding: 10px 20px;
     background: #007bff;
@@ -27,6 +27,6 @@ body {
     cursor: pointer;
 }
 
-#next-btn:hover {
+button:hover {
     background: #0056b3;
 }
