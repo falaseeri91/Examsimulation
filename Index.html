@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <h1>Welcome to the Exam Simulation</h1>
+    <p>Select an exam to get started and track your progress below!</p>
+  </header>
+
+  <main>
+    <section id="navigation">
+      <h2>Exams</h2>
+      <div class="exam-buttons">
+        <button onclick="startExam(1)">Start Exam 1</button>
+        <button onclick="startExam(2)">Start Exam 2</button>
+        <button onclick="startExam(3)">Start Exam 3</button>
+        <button onclick="startExam(4)">Start Exam 4</button>
+      </div>
+    </section>
+
+    <section id="exam" class="hidden">
+      <h2 id="exam-title">Exam</h2>
+      <div id="app"></div>
+      <footer>
+        <button onclick="submitExam()">Submit Exam</button>
+        <button onclick="goBackToDashboard()">Back to Dashboard</button>
+      </footer>
+    </section>
+
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <div id="results">
+        <!-- Results will be dynamically added here -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

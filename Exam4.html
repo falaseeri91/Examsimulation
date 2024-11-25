@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <button onclick="location.href='index.html'">Back to Main</button>
+    <h1>Exam 1</h1>
+  </header>
+  <main id="app">
+    <!-- Questions will be rendered by script.js -->
+  </main>
+  <footer>
+    <button onclick="submitExam()">Submit Exam</button>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    const questions = [
+      // 50 questions specific to this exam
+      { id: 1, text: "Question 1?", options: ["A", "B", "C", "D"], correct: "A" },
+      // ... more questions
+    ];
+
+    renderQuestions(questions);
+  </script>
+</body>
+</html>
